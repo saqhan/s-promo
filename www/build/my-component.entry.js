@@ -1,4 +1,28 @@
-import { r as registerInstance, h } from './index-76a89c29.js';
+import { r as registerInstance, h } from './index-3c44d794.js';
+
+const header = {
+    stickyTop: [
+        {
+            id: 'about-me',
+            name: 'Обо мне',
+        },
+        {
+            id: 'reviews',
+            name: 'Отзывы',
+        },
+        {
+            id: 'portfoloi',
+            name: 'Портфолио',
+        },
+        {
+            id: 'contacts',
+            name: 'Контакты',
+        }
+    ],
+    headerTitle: 'Профессиональная разработка сайтов',
+    headerBtnTitle: 'отправить завку',
+    logoMain: 'http://saqhan.ru/img/logo.png'
+};
 
 const myComponentCss = ".sc-my-component-h{display:block}";
 
@@ -7,7 +31,7 @@ const MyComponent = class {
         registerInstance(this, hostRef);
     }
     render() {
-        return h("div", null, h("cnt-flexy-view-saqhan-promo-header-1_01", null), "\u0442\u0443\u0442 \u0431\u0443\u0434\u0435\u0442 \u0441\u0430\u0439\u0442");
+        return h("div", null, h("cnt-flexy-view-saqhan-promo-header-1_01", { payload: header }));
     }
 };
 MyComponent.style = myComponentCss;

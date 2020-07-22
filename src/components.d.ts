@@ -7,8 +7,16 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface CntFlexyViewSaqhanPromoHeader1_01 {
+        /**
+          * data for stickuTop
+         */
+        "payload": any;
     }
     interface CntFlexyViewSaqhanPromoStickyTop1_01 {
+        /**
+          * data for stickuTop
+         */
+        "payload": any;
     }
     interface MyComponent {
     }
@@ -40,8 +48,16 @@ declare global {
 }
 declare namespace LocalJSX {
     interface CntFlexyViewSaqhanPromoHeader1_01 {
+        /**
+          * data for stickuTop
+         */
+        "payload"?: any;
     }
     interface CntFlexyViewSaqhanPromoStickyTop1_01 {
+        /**
+          * data for stickuTop
+         */
+        "payload"?: any;
     }
     interface MyComponent {
     }
