@@ -7,8 +7,9 @@ import { format } from '../../utils/utils';
   shadow: true
 })
 export class MyComponent {
+
   /**
-   * The first name
+   * * Thsddsde first name
    */
   @Prop() first: string;
 
