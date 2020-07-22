@@ -1,0 +1,40 @@
+
+.navbar {
+  padding: 0
+}
+
+/* убираем стандартные отступы */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 14px;
+}
+
+
+.navbar {
+  padding: 0
+}
+
+.navbar-dark.sc-cnt-flexy-view-saqhan-promo-sticky-top-1_01 {
+  background-color: #1A1B1E;
+}
+
+.navbar.sc-cnt-flexy-view-saqhan-promo-sticky-top-1_01>.container.sc-cnt-flexy-view-saqhan-promo-sticky-top-1_01 {
+  position: relative;
+}
+
+
+.nav-link {
+  padding: .5rem 1rem
+}
+
+
+/*=======*/
+
+li.nav-item.active, li.nav-item, li.nav-item {
+  transition: 0.3s ease;
+}
+
+li.nav-item.active, li.nav-item:hover, li.nav-item:focus {
+  background-color: #007bff;
+}
+

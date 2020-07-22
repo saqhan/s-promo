@@ -1,22 +1,13 @@
-import { r as registerInstance, h } from './index-1b3bd17e.js';
+import { r as registerInstance, h } from './index-76a89c29.js';
 
-function format(first, middle, last) {
-    return ((first || '') +
-        (middle ? ` ${middle}` : '') +
-        (last ? ` ${last}` : ''));
-}
-
-const myComponentCss = ":host{display:block}";
+const myComponentCss = ".sc-my-component-h{display:block}";
 
 const MyComponent = class {
     constructor(hostRef) {
         registerInstance(this, hostRef);
     }
-    getText() {
-        return format(this.first, this.middle, this.last);
-    }
     render() {
-        return h("div", null, this.getText());
+        return h("div", null, h("cnt-flexy-view-saqhan-promo-header-1_01", null), "\u0442\u0443\u0442 \u0431\u0443\u0434\u0435\u0442 \u0441\u0430\u0439\u0442");
     }
 };
 MyComponent.style = myComponentCss;

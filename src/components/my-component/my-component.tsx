@@ -1,33 +1,17 @@
-import { Component, Prop, h } from '@stencil/core';
-import { format } from '../../utils/utils';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
-  shadow: true
+  shadow: false,
+  scoped: true,
 })
 export class MyComponent {
 
-  /**
-   * * Thsddsde first name
-   */
-  @Prop() first: string;
-
-  /**
-   * The middle name
-   */
-  @Prop() middle: string;
-
-  /**
-   * The last name
-   */
-  @Prop() last: string;
-
-  private getText(): string {
-    return format(this.first, this.middle, this.last);
-  }
-
   render() {
-    return <div>{this.getText()}</div>;
+    return <div>
+      <cnt-flexy-view-saqhan-promo-header-1_01></cnt-flexy-view-saqhan-promo-header-1_01>
+      тут будет сайт
+    </div>;
   }
 }

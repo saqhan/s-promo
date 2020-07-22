@@ -6,22 +6,26 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface CntFlexyViewSaqhanPromoHeader1_01 {
+    }
+    interface CntFlexyViewSaqhanPromoStickyTop1_01 {
+    }
     interface MyComponent {
-        /**
-          * * Thsddsde first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
     }
 }
 declare global {
+    interface HTMLCntFlexyViewSaqhanPromoHeader1_01Element extends Components.CntFlexyViewSaqhanPromoHeader1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewSaqhanPromoHeader1_01Element: {
+        prototype: HTMLCntFlexyViewSaqhanPromoHeader1_01Element;
+        new (): HTMLCntFlexyViewSaqhanPromoHeader1_01Element;
+    };
+    interface HTMLCntFlexyViewSaqhanPromoStickyTop1_01Element extends Components.CntFlexyViewSaqhanPromoStickyTop1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewSaqhanPromoStickyTop1_01Element: {
+        prototype: HTMLCntFlexyViewSaqhanPromoStickyTop1_01Element;
+        new (): HTMLCntFlexyViewSaqhanPromoStickyTop1_01Element;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,25 +33,21 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "cnt-flexy-view-saqhan-promo-header-1_01": HTMLCntFlexyViewSaqhanPromoHeader1_01Element;
+        "cnt-flexy-view-saqhan-promo-sticky-top-1_01": HTMLCntFlexyViewSaqhanPromoStickyTop1_01Element;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface CntFlexyViewSaqhanPromoHeader1_01 {
+    }
+    interface CntFlexyViewSaqhanPromoStickyTop1_01 {
+    }
     interface MyComponent {
-        /**
-          * * Thsddsde first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
     }
     interface IntrinsicElements {
+        "cnt-flexy-view-saqhan-promo-header-1_01": CntFlexyViewSaqhanPromoHeader1_01;
+        "cnt-flexy-view-saqhan-promo-sticky-top-1_01": CntFlexyViewSaqhanPromoStickyTop1_01;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +55,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "cnt-flexy-view-saqhan-promo-header-1_01": LocalJSX.CntFlexyViewSaqhanPromoHeader1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoHeader1_01Element>;
+            "cnt-flexy-view-saqhan-promo-sticky-top-1_01": LocalJSX.CntFlexyViewSaqhanPromoStickyTop1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoStickyTop1_01Element>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

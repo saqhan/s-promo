@@ -1,0 +1,166 @@
+
+
+.head {
+  height: 100vh;
+  background: url('http://saqhan.ru/img/promo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.titleBlock {
+  font-size: 40px;
+}
+
+.subtitleBlock {
+  font-size: 20px;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.topContent {
+  text-align: center;
+}
+
+
+
+.button,
+.button::before,
+.button::after,
+.button span,
+.button span::before,
+.button span::after {
+  transition: all ease .5s;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 0.3em;
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none;
+  color: #cdcdcd;
+  font-size: 15px;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 3px #777;
+}
+
+.button span {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6em 2em;
+}
+
+.button:hover span {
+  background-color: #fff;
+  color: #112;
+}
+
+#app {
+  text-align: center;
+}
+
+.button::before,
+.button::after,
+.button div::before,
+.button div::after {
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+
+.button::before,
+.button span::before {
+  border-style: solid none;
+}
+
+.button::before,
+.button span::after {
+  left: 0;
+  top: -0.4em;
+  width: 100%;
+  height: calc(100% + 0.8em);
+}
+
+.button::after,
+.button span::after {
+  border-style: none solid;
+}
+
+.button::after,
+.button span::before {
+  top: 0;
+  left: -0.4em;
+  height: 100%;
+  width: calc(100% + 0.8em);
+}
+
+.button:hover::after,
+.button:hover span::after {
+  transform: scaleY(0);
+}
+
+.button:hover::before,
+.button:hover span::before {
+  transform: scaleX(0);
+}
+
+.button:hover span::after,
+.button:hover span::before {
+  opacity: 0;
+}
+
+
+/*=======*/
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  #navbarTop {
+    margin: 0 15px
+  }
+
+  .logotip {
+    text-align: center;
+    margin-bottom: 10px
+  }
+}
+
+.navbar-dark {
+  background-color: #1A1B1E;
+}
+
+
+
+.myBtn {
+  margin-top: 30px;
+}
+
+/*Средние девайсы («таблетки», >= 768px) */
+@media (max-width: 768px) {
+  .titleBlock {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+}
