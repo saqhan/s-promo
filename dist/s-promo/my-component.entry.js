@@ -16,7 +16,7 @@ const MyComponent = class {
         return format(this.first, this.middle, this.last);
     }
     render() {
-        return h("div", null, "Hello, World! I'm ", this.getText());
+        return h("div", null, this.getText());
     }
 };
 MyComponent.style = myComponentCss;
