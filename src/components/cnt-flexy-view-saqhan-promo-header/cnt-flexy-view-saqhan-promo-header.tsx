@@ -42,7 +42,9 @@ export class CntFlexyViewSaqhanPromoHeader implements ComponentInterface {
         </div>
         <div class="overlay openModal" id="openModal" ref={(el) => (this.overlay = el)} >
           <div class="popup">
-            <div class="popup-close">&times;
+            <div class="popup-close"
+              onClick={()=> this.closeModal()}
+            >&times;
             </div>
             <div class="popup-title"
 
@@ -77,7 +79,12 @@ export class CntFlexyViewSaqhanPromoHeader implements ComponentInterface {
     this.overlay.style.display = 'block';
     document.body.style.overflow = 'hidden';
     this.sendBtn.classList.add('more-plash');
+  }
 
+  public closeModal(){
+    this.overlay.style.display = 'none';
+    document.body.style.overflow = '';
+    this.sendBtn.classList.remove('more-plash');
   }
 
 }
