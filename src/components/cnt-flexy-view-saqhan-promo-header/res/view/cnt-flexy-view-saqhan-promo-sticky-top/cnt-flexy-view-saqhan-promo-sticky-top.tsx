@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, h, Prop } from "@stencil/core";
 
 @Component({
-  tag: "cnt-flexy-view-saqhan-promo-sticky-top-1_01",
+  tag: "cnt-flexy-view-saqhan-promo-sticky-top",
   styleUrl: "cnt-flexy-view-saqhan-promo-sticky-top.css",
   shadow: false,
   scoped: true,
@@ -10,7 +10,7 @@ export class CntFlexyViewSaqhanPromoStickyTop implements ComponentInterface {
   /**
    * data for stickuTop
    * */
-  @Prop() payload: any;
+  @Prop() categories: any;
   render() {
     return (
       <div class="sticky-top">
@@ -30,7 +30,7 @@ export class CntFlexyViewSaqhanPromoStickyTop implements ComponentInterface {
               </button>
               <div class="collapse navbar-collapse" id="navbarTop">
                 <ul class="navbar-nav mr-auto">
-                  {this.getItemSticky(this.payload.stickyTop)}
+                  {this.getItemSticky(this.categories.stickyTop)}
                 </ul>
               </div>
               <div class="navbar-text">
@@ -63,7 +63,7 @@ export class CntFlexyViewSaqhanPromoStickyTop implements ComponentInterface {
   public getItemSticky(array) {
     return array.map((item) => {
       return <li class="nav-item ">
-        <a class="nav-link" href="#About">
+        <a class="nav-link" href={item.id}>
           {item.name}
         </a>
       </li>

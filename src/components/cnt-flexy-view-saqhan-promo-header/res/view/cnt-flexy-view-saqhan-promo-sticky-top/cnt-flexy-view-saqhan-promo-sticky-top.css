@@ -38,3 +38,40 @@ li.nav-item.active, li.nav-item:hover, li.nav-item:focus {
   background-color: #007bff;
 }
 
+.navbar-dark {
+  background-color: #1A1B1E;
+}
+
+.navbar-dark .navbar-text {
+  color: rgba(255,255,255,.5);
+}
+
+.navbar-dark .navbar-text a {
+  color: #fff;
+}
+
+mom-social-icons li a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+/*.navbar-text {*/
+/*  position: absolute;*/
+/*  top: -3px;*/
+/*  right: 15px;*/
+/*}*/
+
+.mom-social-icons li a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: #f0f0f0;
+}

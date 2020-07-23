@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import {header} from "../../utils/mock";
+import {header, aboutMe} from "../../utils/mock";
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
@@ -9,8 +9,13 @@ import {header} from "../../utils/mock";
 export class MyComponent {
 
   render() {
-    return <div>
-      <cnt-flexy-view-saqhan-promo-header-1_01 payload={header}></cnt-flexy-view-saqhan-promo-header-1_01>
-    </div>;
+    return (
+      <div>
+        <cnt-flexy-view-saqhan-promo-header-1_01
+          categories={header}
+        ></cnt-flexy-view-saqhan-promo-header-1_01>
+        <cnt-flexy-view-saqhan-promo-about-me-1_01 payload={aboutMe} ></cnt-flexy-view-saqhan-promo-about-me-1_01>
+      </div>
+    );
   }
 }
