@@ -23,3 +23,12 @@ export interface AboutMe {
     }
 
 }
+
+export interface Portfolio {
+    id: number,
+    title: string,
+    linkGithub: string,
+    linkApp: string,
+    img: string,
+    category: string,
+}

@@ -1,4 +1,11 @@
 
+
+.about-blocks-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
 .about-blocks-wrapper div {
   padding-bottom: 30px;
 }
@@ -15,7 +22,7 @@
 
 .subtitleBlock {
   font-size: 20px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 
 }
 

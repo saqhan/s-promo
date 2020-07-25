@@ -1,0 +1,63 @@
+
+input {
+  outline: none;
+}
+
+.fdb-block {
+  background: url(http://saqhan.ru/img/footer-bg.png);
+}
+
+.contact {
+  padding:50px 0px;
+}
+
+.contact {
+  background-image: url(http://saqhan.ru/img/9.svg);
+  background-size: cover;
+}
+
+.title-contacts {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.footer-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.title-call {
+  margin-top: 10px;
+}
+
+.btn {
+  width: 140px;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 20px;
+}
+
+.btn-send {
+  background-color: #fe6347;
+  color: #fff;
+}
+
+
+
+element.style {
+}
+#hide-block {
+  display: none;
+  background-color: #4e8000;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.6s ease;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}

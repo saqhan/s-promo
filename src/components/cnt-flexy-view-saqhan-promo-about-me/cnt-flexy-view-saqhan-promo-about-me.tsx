@@ -22,7 +22,7 @@ export class CntFlexyViewSaqhanPromoAboutMe implements ComponentInterface {
               </div>
             </div>
           </div>
-          <div class="row justify-content-center about-blocks-wrapper">
+          <div class="row  about-blocks-wrapper">
             <div class="col-12 col-md-6 col-lg-4">
               <div class="subtitleBlock text-center lsp pb-3">
                 {this.payload.aboutMe.title}
