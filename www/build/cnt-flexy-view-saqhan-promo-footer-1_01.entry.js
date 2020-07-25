@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-8eb9d8b9.js';
+import { r as registerInstance, h } from './index-2c367d7a.js';
 
 const cntFlexyViewSaqhanPromoFooterCss = "input.sc-cnt-flexy-view-saqhan-promo-footer-1_01{outline:none}.fdb-block.sc-cnt-flexy-view-saqhan-promo-footer-1_01{background:url(http://saqhan.ru/img/footer-bg.png)}.contact.sc-cnt-flexy-view-saqhan-promo-footer-1_01{padding:50px 0px}.contact.sc-cnt-flexy-view-saqhan-promo-footer-1_01{background-image:url(http://saqhan.ru/img/9.svg);background-size:cover}.title-contacts.sc-cnt-flexy-view-saqhan-promo-footer-1_01{font-size:40px;margin-bottom:25px}.footer-subtitle.sc-cnt-flexy-view-saqhan-promo-footer-1_01{font-size:28px;font-weight:400}.title-call.sc-cnt-flexy-view-saqhan-promo-footer-1_01{margin-top:10px}.btn.sc-cnt-flexy-view-saqhan-promo-footer-1_01{width:140px;letter-spacing:1px;position:relative;font-size:20px}.btn-send.sc-cnt-flexy-view-saqhan-promo-footer-1_01{background-color:#fe6347;color:#fff}#hide-block.sc-cnt-flexy-view-saqhan-promo-footer-1_01{display:none;background-color:#4e8000;padding:10px;margin-top:20px;border-radius:3px;color:#fff;transition:0.6s ease}.footer-copyright.sc-cnt-flexy-view-saqhan-promo-footer-1_01{color:#ffffff;margin-top:30px;margin-bottom:50px}";
 
@@ -26,7 +26,6 @@ const CntFlexyViewSaqhanPromoFooter = class {
         }
     }
     checkInput(check) {
-        console.log('1');
         if (check.value === '') {
             check.style.border = "1px solid red";
         }

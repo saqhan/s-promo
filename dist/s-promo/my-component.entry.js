@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-8eb9d8b9.js';
+import { r as registerInstance, h } from './index-2c367d7a.js';
 
 /*
  * данные для первого блока и меню
@@ -45,56 +45,100 @@ const aboutMe = {
         email: "saqhan1@mail.ru",
     },
 };
-const portfolio = [
-    {
-        id: 1,
-        title: 'Module Chat',
-        linkGithub: 'https://github.com/saqhan/contacts',
-        linkApp: 'https://saqhan.github.io/contacts/',
-        img: 'http://saqhan.ru/img/portfolio/angular.jpg',
-        category: 'angular'
-    },
-    {
-        id: 2,
-        title: 'Mobile Chat',
-        linkGithub: 'https://github.com/saqhan/contacts',
-        linkApp: 'https://saqhan.github.io/contacts/',
-        img: 'http://saqhan.ru/img/portfolio/angular.jpg',
-        category: 'angular'
-    },
-    {
-        id: 3,
-        title: 'Contacts',
-        linkGithub: 'https://github.com/saqhan/contacts',
-        linkApp: 'https://saqhan.github.io/contacts/',
-        img: 'http://saqhan.ru/img/portfolio/react.jpg',
-        category: 'react'
-    },
-    {
-        id: 4,
-        title: 'Приложение no-twitter.',
-        linkGithub: 'https://github.com/saqhan/no-twitter/',
-        linkApp: 'https://saqhan.github.io/no-twitter/',
-        img: 'http://saqhan.ru/img/portfolio/angular.jpg',
-        category: 'angular'
-    },
-    {
-        id: 5,
-        title: 'Todo приложение нa Angular',
-        linkGithub: 'https://github.com/saqhan/ng-todo/',
-        linkApp: 'https://saqhan.github.io/ng-todo/',
-        img: 'http://saqhan.ru/img/portfolio/angular.jpg',
-        category: 'angular'
-    },
-    {
-        id: 6,
-        title: 'Chat приложение нa React',
-        linkGithub: 'https://github.com/saqhan/chat',
-        linkApp: 'https://saqhan.github.io/chat/',
-        img: 'http://saqhan.ru/img/portfolio/react.jpg',
-        category: 'react'
-    },
-];
+const portfolio = {
+    portfolioCard: [
+        {
+            id: 1,
+            title: "Module Chat",
+            linkGithub: "https://github.com/saqhan/contacts",
+            linkApp: "https://saqhan.github.io/contacts/",
+            img: "http://saqhan.ru/img/portfolio/angular.jpg",
+            category: "angular",
+        },
+        {
+            id: 2,
+            title: "Mobile Chat",
+            linkGithub: "https://github.com/saqhan/contacts",
+            linkApp: "https://saqhan.github.io/contacts/",
+            img: "http://saqhan.ru/img/portfolio/angular.jpg",
+            category: "angular",
+        },
+        {
+            id: 3,
+            title: "Contacts",
+            linkGithub: "https://github.com/saqhan/contacts",
+            linkApp: "https://saqhan.github.io/contacts/",
+            img: "http://saqhan.ru/img/portfolio/react.jpg",
+            category: "react",
+        },
+        {
+            id: 4,
+            title: "Приложение no-twitter.",
+            linkGithub: "https://github.com/saqhan/no-twitter/",
+            linkApp: "https://saqhan.github.io/no-twitter/",
+            img: "http://saqhan.ru/img/portfolio/angular.jpg",
+            category: "angular",
+        },
+        {
+            id: 9,
+            title: "Министерство автомобильных дорог",
+            linkGithub: "",
+            linkApp: "https://www.minavtodor-chr.ru/",
+            img: "http://saqhan.ru/img/portfolio/minavtodor.jpg",
+            category: "wordpress",
+        },
+        {
+            id: 5,
+            title: "Todo приложение нa Angular",
+            linkGithub: "https://github.com/saqhan/ng-todo/",
+            linkApp: "https://saqhan.github.io/ng-todo/",
+            img: "http://saqhan.ru/img/portfolio/angular.jpg",
+            category: "angular",
+        },
+        {
+            id: 6,
+            title: "Chat приложение нa React",
+            linkGithub: "https://github.com/saqhan/chat",
+            linkApp: "https://saqhan.github.io/chat/",
+            img: "http://saqhan.ru/img/portfolio/react.jpg",
+            category: "react",
+        },
+        {
+            id: 7,
+            title: "Интернет магазин детских товаров",
+            linkGithub: "",
+            linkApp: "https://wowchild.ru/",
+            img: "http://saqhan.ru/img/portfolio/kids.jpg",
+            category: "wordpress",
+        },
+        {
+            id: 8,
+            title: "Префектура Ленинского района ЧР",
+            linkGithub: "",
+            linkApp: "https://prefect-len.ru/",
+            img: "http://saqhan.ru/img/portfolio/len-pre.jpg",
+            category: "wordpress",
+        },
+    ],
+    categoriesPortfolio: [
+        {
+            id: "all",
+            name: "Все",
+        },
+        {
+            id: "angular",
+            name: "Angular",
+        },
+        {
+            id: "react",
+            name: "React",
+        },
+        {
+            id: "wordpress",
+            name: "WordPress",
+        },
+    ],
+};
 
 const myComponentCss = ".sc-my-component-h{display:block}";
 

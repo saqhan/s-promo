@@ -24,11 +24,25 @@ export interface AboutMe {
 
 }
 
+
+
+
+
+
+
+
+
 export interface Portfolio {
-    id: number,
-    title: string,
-    linkGithub: string,
-    linkApp: string,
-    img: string,
-    category: string,
+    portfolioCard: {
+        id: number,
+        title: string,
+        linkGithub: string,
+        linkApp: string,
+        img: string,
+        category: string,
+    }[],
+    categoriesPortfolio: {
+        id: string,
+        name: string
+    }[]
 }

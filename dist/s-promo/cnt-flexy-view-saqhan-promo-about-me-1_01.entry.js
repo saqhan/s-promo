@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-8eb9d8b9.js';
+import { r as registerInstance, h } from './index-2c367d7a.js';
 
 const cntFlexyViewSaqhanPromoAboutMeCss = ".about-blocks-wrapper.sc-cnt-flexy-view-saqhan-promo-about-me-1_01{display:flex;justify-content:space-between;align-content:center}.about-blocks-wrapper.sc-cnt-flexy-view-saqhan-promo-about-me-1_01 div.sc-cnt-flexy-view-saqhan-promo-about-me-1_01{padding-bottom:30px}.wrapper-title-about.sc-cnt-flexy-view-saqhan-promo-about-me-1_01{padding:50px 0px}.titleBlock.sc-cnt-flexy-view-saqhan-promo-about-me-1_01{letter-spacing:10px;font-size:40px;text-align:center}.subtitleBlock.sc-cnt-flexy-view-saqhan-promo-about-me-1_01{font-size:20px;letter-spacing:5px}.aboutContactsubtitle.sc-cnt-flexy-view-saqhan-promo-about-me-1_01 i.sc-cnt-flexy-view-saqhan-promo-about-me-1_01{color:#fe6347;margin-right:10px}.aboutContactsubtitle.sc-cnt-flexy-view-saqhan-promo-about-me-1_01 a.sc-cnt-flexy-view-saqhan-promo-about-me-1_01{margin-right:5px}";
 

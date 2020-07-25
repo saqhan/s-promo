@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, Prop } from "@stencil/core";
+import { Component, ComponentInterface, h, Prop, State } from "@stencil/core";
 import { Portfolio } from "../res/interface/common.interface";
 
 @Component({
@@ -8,21 +8,21 @@ import { Portfolio } from "../res/interface/common.interface";
   scoped: true,
 })
 export class CntFlexyViewSaqhanPromoPortfolio implements ComponentInterface {
-  @Prop() payload: Portfolio[];
+  @Prop() payload: Portfolio;
+
+  @State() portfolioCardState = this.payload.portfolioCard;
+
   render() {
     return (
       <div class="portfolio-wrapper">
         <div class="container">
           <div class="title">Портфолио</div>
-            <div class="categories">
-                <ul>
-                    <li>Все</li>
-                    <li>Angular</li>
-                    <li>React</li>
-                    <li>WordPress</li>
-                </ul>
-            </div>
-          <div class="cars-wrapper row">{this.getCard(this.payload)}</div>
+          <div class="categories">
+            <ul>{this.getCategories(this.payload.categoriesPortfolio)}</ul>
+          </div>
+          <div class="cars-wrapper row">
+            {this.getCard(this.portfolioCardState)}
+          </div>
         </div>
       </div>
     );
@@ -31,28 +31,56 @@ export class CntFlexyViewSaqhanPromoPortfolio implements ComponentInterface {
   /**
    * get a card
    * */
-
-  public getCard(array): Portfolio {
+  public getCard(array) {
     return array.map((item) => {
-      return (<div class="col-12 col-md-6 col-lg-4">
+      return (
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card-portfolio">
-              <div
-                  class="img"
-                  style={{ backgroundImage: `url(${item.img})` }}
-              ></div>
-              <div class="details">
-                  <div class="description">{item.title}</div>
-                  <div class="btns">
-                      <a target="_blank" href={item.linkApp} class="check-app">
-                          Перейти <i class="fas fa-external-link-alt"></i>
-                      </a>
-                      <a target="_blank" href={item.linkGithub} class="check-in-github">
-                          Github <i class="fab fa-github"></i>
-                      </a>
-                  </div>
+            <div
+              class="img"
+              style={{ backgroundImage: `url(${item.img})` }}
+            ></div>
+            <div class="details">
+              <div class="description">{item.title}</div>
+              <div class="btns">
+                <a target="_blank" href={item.linkApp} class="check-app">
+                  Перейти <i class="fas fa-external-link-alt"></i>
+                </a>
+                {item.linkGithub.length
+                    ? <a
+                        target="_blank"
+                        href={item.linkGithub}
+                        class="check-in-github"
+                    >
+                      Github <i class="fab fa-github"></i>
+                    </a> : ''}
               </div>
+            </div>
           </div>
-      </div>)
+        </div>
+      );
     });
+  }
+
+  /**
+   * get category
+   * */
+  public getCategories(array) {
+    return array.map((item) => {
+      return (
+        <li onClick={() => this.filterCategoryPortfolioHandler(item.id)}>
+          {item.name}
+        </li>
+      );
+    });
+  }
+
+  public filterCategoryPortfolioHandler(id) {
+    console.log(this.portfolioCardState);
+    return id !== "all"
+      ? (this.portfolioCardState = this.payload.portfolioCard.filter(
+          (item) => item.category === id
+        ))
+      : (this.portfolioCardState = this.payload.portfolioCard);
   }
 }

@@ -205,7 +205,6 @@ export class CntFlexyViewSaqhanPromoFooter implements ComponentInterface {
   }
 
   public checkInput(check) {
-    console.log('1')
     if (check.value === '') {
       check.style.border = "1px solid red";
     } else {

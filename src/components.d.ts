@@ -20,7 +20,7 @@ export namespace Components {
         "categories": HeaderStickyInterface;
     }
     interface CntFlexyViewSaqhanPromoPortfolio1_01 {
-        "payload": Portfolio[];
+        "payload": Portfolio;
     }
     interface CntFlexyViewSaqhanPromoStickyTop {
         /**
@@ -91,7 +91,7 @@ declare namespace LocalJSX {
         "categories"?: HeaderStickyInterface;
     }
     interface CntFlexyViewSaqhanPromoPortfolio1_01 {
-        "payload"?: Portfolio[];
+        "payload"?: Portfolio;
     }
     interface CntFlexyViewSaqhanPromoStickyTop {
         /**

@@ -26,7 +26,7 @@ export class CntFlexyViewSaqhanPromoHeader implements ComponentInterface {
     return (
       <div>
         <cnt-flexy-view-saqhan-promo-sticky-top
-          categories={this.categories}
+          categories={this.categories.stickyTop}
         ></cnt-flexy-view-saqhan-promo-sticky-top>
         <div
           class="container-fluid head"
