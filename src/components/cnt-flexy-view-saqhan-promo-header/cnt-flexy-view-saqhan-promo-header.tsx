@@ -1,8 +1,6 @@
 import { Component, ComponentInterface, h, Prop } from "@stencil/core";
 import { HeaderStickyInterface } from "../res/interface/common.interface";
 
-
-
 @Component({
   tag: "cnt-flexy-view-saqhan-promo-header-1_01",
   styleUrl: "cnt-flexy-view-saqhan-promo-header.css",

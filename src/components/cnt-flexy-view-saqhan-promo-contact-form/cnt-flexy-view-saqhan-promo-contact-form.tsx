@@ -27,7 +27,7 @@ export class CntFlexyViewSaqhanPromoContactForm implements ComponentInterface {
 
   render() {
     return (
-      <section class="fdb-block contact wow animation_duration animate__fadeIn" id="contact">
+      <section class="fdb-block contact wow animation_duration animate__fadeIn" id="contacts">
         <div class="bg-gray">
           <div class="container">
             <div class="row-100"></div>
@@ -152,7 +152,6 @@ export class CntFlexyViewSaqhanPromoContactForm implements ComponentInterface {
 
   public sendMessage() {
     if (this.phoneInput.value !== "" && this.phoneInput.value !== "") {
-      console.log("send access");
       this.hideBlock.style.display = "block";
       setTimeout(function () {
         document.getElementById("hide-block").style.display = "none";

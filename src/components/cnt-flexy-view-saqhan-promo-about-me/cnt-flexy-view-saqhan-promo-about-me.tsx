@@ -12,8 +12,8 @@ export class CntFlexyViewSaqhanPromoAboutMe implements ComponentInterface {
   @Prop() payload:AboutMe;
   render() {
     return (
-      <div class="wow animation_duration animate__fadeInUp">
-        <div class="container " id="about-me ">
+      <div class="wow animation_duration animate__fadeInUp" id="about-me">
+        <div class="container " >
           <div class="row">
             <div class="col-sm-12 wrapper-title-about">
               <div class="titleBlock  ">{this.payload.title}</div>

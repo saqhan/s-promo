@@ -15,7 +15,7 @@ export class CntFlexyViewSaqhanPromoPortfolio implements ComponentInterface {
 
   render() {
     return (
-      <div class="portfolio-wrapper wow animation_duration animate__fadeInUp">
+      <div class="portfolio-wrapper wow animation_duration animate__fadeInUp" id='portfolio'>
         <div class="container">
           <div class="title ">Портфолио</div>
           <div class="categories ">
@@ -82,7 +82,6 @@ export class CntFlexyViewSaqhanPromoPortfolio implements ComponentInterface {
   }
 
   public filterCategoryPortfolioHandler(id) {
-    console.log(this.portfolioCardState);
     this.lastClickedCategory = id;
     return id !== "all"
       ? (this.portfolioCardState = this.payload.portfolioCard.filter(

@@ -8,7 +8,7 @@ const CntFlexyViewSaqhanPromoPortfolio = class {
         this.portfolioCardState = this.payload.portfolioCard;
     }
     render() {
-        return (h("div", { class: "portfolio-wrapper wow animation_duration animate__fadeInUp" }, h("div", { class: "container" }, h("div", { class: "title " }, "\u041F\u043E\u0440\u0442\u0444\u043E\u043B\u0438\u043E"), h("div", { class: "categories " }, h("ul", null, this.getCategories(this.payload.categoriesPortfolio))), h("div", { class: "cars-wrapper   row" }, this.getCard(this.portfolioCardState)))));
+        return (h("div", { class: "portfolio-wrapper wow animation_duration animate__fadeInUp", id: 'portfolio' }, h("div", { class: "container" }, h("div", { class: "title " }, "\u041F\u043E\u0440\u0442\u0444\u043E\u043B\u0438\u043E"), h("div", { class: "categories " }, h("ul", null, this.getCategories(this.payload.categoriesPortfolio))), h("div", { class: "cars-wrapper   row" }, this.getCard(this.portfolioCardState)))));
     }
     /**
      * get a card
@@ -27,7 +27,6 @@ const CntFlexyViewSaqhanPromoPortfolio = class {
         });
     }
     filterCategoryPortfolioHandler(id) {
-        console.log(this.portfolioCardState);
         this.lastClickedCategory = id;
         return id !== "all"
             ? (this.portfolioCardState = this.payload.portfolioCard.filter((item) => item.category === id))

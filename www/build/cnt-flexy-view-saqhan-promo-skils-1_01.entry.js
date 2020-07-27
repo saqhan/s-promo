@@ -8,7 +8,7 @@ const CntFlexyViewSaqhanPromoSkils = class {
         this.payload = [];
     }
     render() {
-        return (h("div", { class: "wow animation_duration animate__fadeInUp" }, h("div", { class: "container" }, h("div", { class: "row" }, h("div", { class: "col-12" }, h("div", { class: "title" }, "\u041D\u0430\u0432\u044B\u043A\u0438"))), h("div", { class: "row wrapper-cards" }, h(SkillsCard, { skills: this.payload })))));
+        return (h("div", { class: "wow animation_duration animate__fadeInUp", id: "skills" }, h("div", { class: "container" }, h("div", { class: "row" }, h("div", { class: "col-12" }, h("div", { class: "title" }, "\u041D\u0430\u0432\u044B\u043A\u0438"))), h("div", { class: "row wrapper-cards" }, h(SkillsCard, { skills: this.payload })))));
     }
 };
 const SkillsCard = (props) => {

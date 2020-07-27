@@ -8,11 +8,11 @@ export const header = {
       name: "Обо мне",
     },
     {
-      id: "reviews",
-      name: "Отзывы",
+      id: "skills",
+      name: "Навыки",
     },
     {
-      id: "portfoloi",
+      id: "portfolio",
       name: "Портфолио",
     },
     {

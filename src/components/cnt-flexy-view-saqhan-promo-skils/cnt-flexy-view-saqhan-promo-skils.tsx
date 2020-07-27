@@ -12,7 +12,7 @@ export class CntFlexyViewSaqhanPromoSkils implements ComponentInterface {
 
   render() {
     return (
-      <div class="wow animation_duration animate__fadeInUp">
+      <div class="wow animation_duration animate__fadeInUp" id="skills" >
         <div class="container">
           <div class="row">
             <div class="col-12">
