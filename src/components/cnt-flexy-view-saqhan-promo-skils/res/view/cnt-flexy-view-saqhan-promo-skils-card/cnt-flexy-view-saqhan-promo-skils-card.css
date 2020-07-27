@@ -1,0 +1,26 @@
+
+
+.state-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-skills {
+    margin-top: 30px;
+}
+
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    height: 6px;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #ccc;
+    border-radius: .25rem;
+}
+
+.progress-bar {
+    /*width: 80%;*/
+    background-color: #fe6347;
+}

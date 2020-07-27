@@ -24,14 +24,6 @@ export interface AboutMe {
 
 }
 
-
-
-
-
-
-
-
-
 export interface Portfolio {
     portfolioCard: {
         id: number,
@@ -45,4 +37,9 @@ export interface Portfolio {
         id: string,
         name: string
     }[]
+}
+
+export interface Skils {
+    name: string,
+    percent: number
 }

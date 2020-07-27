@@ -1,6 +1,8 @@
 import { Component, ComponentInterface, h, Prop } from "@stencil/core";
 import { HeaderStickyInterface } from "../res/interface/common.interface";
 
+
+
 @Component({
   tag: "cnt-flexy-view-saqhan-promo-header-1_01",
   styleUrl: "cnt-flexy-view-saqhan-promo-header.css",
@@ -33,11 +35,12 @@ export class CntFlexyViewSaqhanPromoHeader implements ComponentInterface {
           style={{ backgroundImage: "url(http://saqhan.ru/img/promo.jpg)" }}
         >
           <div class="row flex-center">
-            <div class="topContent ">
+            <div class="topContent wow animation_duration animate__fadeIn ">
               <div class="logo">
                 <img src={this.categories.logoMain} alt="Сайхан Абаев"></img>
               </div>
-              <div class="titleBlock">{this.categories.headerTitle}</div>
+              <div class="titleBlock ">{this.categories.headerTitle}</div>
+
               <button
                 id="myBtn"
                 class="button myBtn sendBtn"

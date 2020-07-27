@@ -5,14 +5,30 @@
 <!-- Auto Generated Below -->
 
 
-## Properties
+## Dependencies
 
-| Property | Attribute | Description     | Type     | Default     |
-| -------- | --------- | --------------- | -------- | ----------- |
-| `first`  | `first`   | The first name  | `string` | `undefined` |
-| `last`   | `last`    | The last name   | `string` | `undefined` |
-| `middle` | `middle`  | The middle name | `string` | `undefined` |
+### Depends on
 
+- [cnt-flexy-view-saqhan-promo-header-1_01](../cnt-flexy-view-saqhan-promo-header)
+- [cnt-flexy-view-saqhan-promo-about-me-1_01](../cnt-flexy-view-saqhan-promo-about-me)
+- [cnt-flexy-view-saqhan-promo-skils-1_01](../cnt-flexy-view-saqhan-promo-skils)
+- [cnt-flexy-view-saqhan-promo-portfolio-1_01](../cnt-flexy-view-saqhan-promo-portfolio)
+- [cnt-flexy-view-saqhan-promo-contact-form-1_01](../cnt-flexy-view-saqhan-promo-contact-form)
+- [cnt-flexy-view-saqhan-promo-footer-1_01](../cnt-flexy-view-saqhan-promo-footer)
+
+### Graph
+```mermaid
+graph TD;
+  my-component --> cnt-flexy-view-saqhan-promo-header-1_01
+  my-component --> cnt-flexy-view-saqhan-promo-about-me-1_01
+  my-component --> cnt-flexy-view-saqhan-promo-skils-1_01
+  my-component --> cnt-flexy-view-saqhan-promo-portfolio-1_01
+  my-component --> cnt-flexy-view-saqhan-promo-contact-form-1_01
+  my-component --> cnt-flexy-view-saqhan-promo-footer-1_01
+  cnt-flexy-view-saqhan-promo-header-1_01 --> cnt-flexy-view-saqhan-promo-sticky-top
+  cnt-flexy-view-saqhan-promo-skils-1_01 --> cnt-flexy-view-saqhan-promo-skils-card
+  style my-component fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 

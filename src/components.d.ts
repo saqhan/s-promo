@@ -5,13 +5,16 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { AboutMe, HeaderStickyInterface, Portfolio, } from "./components/res/interface/common.interface";
+import { AboutMe, HeaderStickyInterface, Portfolio, Skils, } from "./components/res/interface/common.interface";
 export namespace Components {
     interface CntFlexyViewSaqhanPromoAboutMe1_01 {
         "payload": AboutMe;
     }
-    interface CntFlexyViewSaqhanPromoFooter1_01 {
+    interface CntFlexyViewSaqhanPromoContactForm1_01 {
         "payload": AboutMe;
+    }
+    interface CntFlexyViewSaqhanPromoFooter1_01 {
+        "categories": HeaderStickyInterface;
     }
     interface CntFlexyViewSaqhanPromoHeader1_01 {
         /**
@@ -21,6 +24,15 @@ export namespace Components {
     }
     interface CntFlexyViewSaqhanPromoPortfolio1_01 {
         "payload": Portfolio;
+    }
+    interface CntFlexyViewSaqhanPromoSkils1_01 {
+        "payload": Skils[];
+    }
+    interface CntFlexyViewSaqhanPromoSkilsCard {
+        /**
+          * data for cards
+         */
+        "skills": Skils;
     }
     interface CntFlexyViewSaqhanPromoStickyTop {
         /**
@@ -37,6 +49,12 @@ declare global {
     var HTMLCntFlexyViewSaqhanPromoAboutMe1_01Element: {
         prototype: HTMLCntFlexyViewSaqhanPromoAboutMe1_01Element;
         new (): HTMLCntFlexyViewSaqhanPromoAboutMe1_01Element;
+    };
+    interface HTMLCntFlexyViewSaqhanPromoContactForm1_01Element extends Components.CntFlexyViewSaqhanPromoContactForm1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewSaqhanPromoContactForm1_01Element: {
+        prototype: HTMLCntFlexyViewSaqhanPromoContactForm1_01Element;
+        new (): HTMLCntFlexyViewSaqhanPromoContactForm1_01Element;
     };
     interface HTMLCntFlexyViewSaqhanPromoFooter1_01Element extends Components.CntFlexyViewSaqhanPromoFooter1_01, HTMLStencilElement {
     }
@@ -56,6 +74,18 @@ declare global {
         prototype: HTMLCntFlexyViewSaqhanPromoPortfolio1_01Element;
         new (): HTMLCntFlexyViewSaqhanPromoPortfolio1_01Element;
     };
+    interface HTMLCntFlexyViewSaqhanPromoSkils1_01Element extends Components.CntFlexyViewSaqhanPromoSkils1_01, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewSaqhanPromoSkils1_01Element: {
+        prototype: HTMLCntFlexyViewSaqhanPromoSkils1_01Element;
+        new (): HTMLCntFlexyViewSaqhanPromoSkils1_01Element;
+    };
+    interface HTMLCntFlexyViewSaqhanPromoSkilsCardElement extends Components.CntFlexyViewSaqhanPromoSkilsCard, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewSaqhanPromoSkilsCardElement: {
+        prototype: HTMLCntFlexyViewSaqhanPromoSkilsCardElement;
+        new (): HTMLCntFlexyViewSaqhanPromoSkilsCardElement;
+    };
     interface HTMLCntFlexyViewSaqhanPromoStickyTopElement extends Components.CntFlexyViewSaqhanPromoStickyTop, HTMLStencilElement {
     }
     var HTMLCntFlexyViewSaqhanPromoStickyTopElement: {
@@ -70,9 +100,12 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "cnt-flexy-view-saqhan-promo-about-me-1_01": HTMLCntFlexyViewSaqhanPromoAboutMe1_01Element;
+        "cnt-flexy-view-saqhan-promo-contact-form-1_01": HTMLCntFlexyViewSaqhanPromoContactForm1_01Element;
         "cnt-flexy-view-saqhan-promo-footer-1_01": HTMLCntFlexyViewSaqhanPromoFooter1_01Element;
         "cnt-flexy-view-saqhan-promo-header-1_01": HTMLCntFlexyViewSaqhanPromoHeader1_01Element;
         "cnt-flexy-view-saqhan-promo-portfolio-1_01": HTMLCntFlexyViewSaqhanPromoPortfolio1_01Element;
+        "cnt-flexy-view-saqhan-promo-skils-1_01": HTMLCntFlexyViewSaqhanPromoSkils1_01Element;
+        "cnt-flexy-view-saqhan-promo-skils-card": HTMLCntFlexyViewSaqhanPromoSkilsCardElement;
         "cnt-flexy-view-saqhan-promo-sticky-top": HTMLCntFlexyViewSaqhanPromoStickyTopElement;
         "my-component": HTMLMyComponentElement;
     }
@@ -81,8 +114,11 @@ declare namespace LocalJSX {
     interface CntFlexyViewSaqhanPromoAboutMe1_01 {
         "payload"?: AboutMe;
     }
-    interface CntFlexyViewSaqhanPromoFooter1_01 {
+    interface CntFlexyViewSaqhanPromoContactForm1_01 {
         "payload"?: AboutMe;
+    }
+    interface CntFlexyViewSaqhanPromoFooter1_01 {
+        "categories"?: HeaderStickyInterface;
     }
     interface CntFlexyViewSaqhanPromoHeader1_01 {
         /**
@@ -92,6 +128,15 @@ declare namespace LocalJSX {
     }
     interface CntFlexyViewSaqhanPromoPortfolio1_01 {
         "payload"?: Portfolio;
+    }
+    interface CntFlexyViewSaqhanPromoSkils1_01 {
+        "payload"?: Skils[];
+    }
+    interface CntFlexyViewSaqhanPromoSkilsCard {
+        /**
+          * data for cards
+         */
+        "skills"?: Skils;
     }
     interface CntFlexyViewSaqhanPromoStickyTop {
         /**
@@ -103,9 +148,12 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "cnt-flexy-view-saqhan-promo-about-me-1_01": CntFlexyViewSaqhanPromoAboutMe1_01;
+        "cnt-flexy-view-saqhan-promo-contact-form-1_01": CntFlexyViewSaqhanPromoContactForm1_01;
         "cnt-flexy-view-saqhan-promo-footer-1_01": CntFlexyViewSaqhanPromoFooter1_01;
         "cnt-flexy-view-saqhan-promo-header-1_01": CntFlexyViewSaqhanPromoHeader1_01;
         "cnt-flexy-view-saqhan-promo-portfolio-1_01": CntFlexyViewSaqhanPromoPortfolio1_01;
+        "cnt-flexy-view-saqhan-promo-skils-1_01": CntFlexyViewSaqhanPromoSkils1_01;
+        "cnt-flexy-view-saqhan-promo-skils-card": CntFlexyViewSaqhanPromoSkilsCard;
         "cnt-flexy-view-saqhan-promo-sticky-top": CntFlexyViewSaqhanPromoStickyTop;
         "my-component": MyComponent;
     }
@@ -115,9 +163,12 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "cnt-flexy-view-saqhan-promo-about-me-1_01": LocalJSX.CntFlexyViewSaqhanPromoAboutMe1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoAboutMe1_01Element>;
+            "cnt-flexy-view-saqhan-promo-contact-form-1_01": LocalJSX.CntFlexyViewSaqhanPromoContactForm1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoContactForm1_01Element>;
             "cnt-flexy-view-saqhan-promo-footer-1_01": LocalJSX.CntFlexyViewSaqhanPromoFooter1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoFooter1_01Element>;
             "cnt-flexy-view-saqhan-promo-header-1_01": LocalJSX.CntFlexyViewSaqhanPromoHeader1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoHeader1_01Element>;
             "cnt-flexy-view-saqhan-promo-portfolio-1_01": LocalJSX.CntFlexyViewSaqhanPromoPortfolio1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoPortfolio1_01Element>;
+            "cnt-flexy-view-saqhan-promo-skils-1_01": LocalJSX.CntFlexyViewSaqhanPromoSkils1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoSkils1_01Element>;
+            "cnt-flexy-view-saqhan-promo-skils-card": LocalJSX.CntFlexyViewSaqhanPromoSkilsCard & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoSkilsCardElement>;
             "cnt-flexy-view-saqhan-promo-sticky-top": LocalJSX.CntFlexyViewSaqhanPromoStickyTop & JSXBase.HTMLAttributes<HTMLCntFlexyViewSaqhanPromoStickyTopElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }

@@ -164,10 +164,13 @@ ul {
 
 .mobile-menu-close {
   color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #cccccc;
   transition: all 0.3s;
   position: absolute;
   top: 50px;
-  background-color: transparent;
+  /*background-color: transparent;*/
   border: none;
 }
 
@@ -203,16 +206,42 @@ ul {
   display: inline-block;
 }
 
-.menu-desktop {
-  width: 80%;
-  background-color: #cccccc;
+.menu-desktop ul {
+  display: flex;
 }
-ul li {
+
+.menu-desktop ul li {
   list-style: none;
+  display: inline;
+}
+
+.menu-desktop ul li a {
+  color: #ffffff;
+}
+
+.menu-desktop ul li a:hover {
+  color: #fe6347;
+}
+
+.menu-desktop ul li:hover {
+
+  background-color: #ffffff;
+}
+
+.menu-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.bg-dark {
+  background-color: #1a1b1e;
 }
 
 @media (max-width: 992px) {
-  .soc-links  {
+  .soc-links, .bg-dark   {
     display: none;
   }
 }

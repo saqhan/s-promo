@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-2c367d7a.js';
+import { r as registerInstance, h } from './index-54bf13c8.js';
 
 /*
  * данные для первого блока и меню
@@ -139,6 +139,40 @@ const portfolio = {
         },
     ],
 };
+const skils = [
+    {
+        name: 'HTML',
+        percent: 90,
+    },
+    {
+        name: 'CSS',
+        percent: 90,
+    },
+    {
+        name: 'JS',
+        percent: 75,
+    },
+    {
+        name: 'Angular',
+        percent: 70,
+    },
+    {
+        name: 'React',
+        percent: 60,
+    },
+    {
+        name: 'Wordpress',
+        percent: 90,
+    },
+    {
+        name: 'JQuery',
+        percent: 75,
+    },
+    {
+        name: 'Photoshop',
+        percent: 90,
+    },
+];
 
 const myComponentCss = ".sc-my-component-h{display:block}";
 
@@ -147,7 +181,7 @@ const MyComponent = class {
         registerInstance(this, hostRef);
     }
     render() {
-        return (h("div", null, h("cnt-flexy-view-saqhan-promo-header-1_01", { categories: header }), h("cnt-flexy-view-saqhan-promo-about-me-1_01", { payload: aboutMe }), h("cnt-flexy-view-saqhan-promo-portfolio-1_01", { payload: portfolio }), h("cnt-flexy-view-saqhan-promo-footer-1_01", { payload: aboutMe })));
+        return (h("div", null, h("cnt-flexy-view-saqhan-promo-header-1_01", { categories: header }), h("cnt-flexy-view-saqhan-promo-about-me-1_01", { payload: aboutMe }), h("cnt-flexy-view-saqhan-promo-skils-1_01", { payload: skils }), h("cnt-flexy-view-saqhan-promo-portfolio-1_01", { payload: portfolio }), h("cnt-flexy-view-saqhan-promo-contact-form-1_01", { payload: aboutMe }), h("cnt-flexy-view-saqhan-promo-footer-1_01", { categories: header })));
     }
 };
 MyComponent.style = myComponentCss;

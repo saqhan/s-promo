@@ -142,3 +142,38 @@ export const portfolio = {
     },
   ],
 };
+
+export const skils = [
+  {
+    name: 'HTML',
+    percent: 90,
+  },
+  {
+    name: 'CSS',
+    percent: 90,
+  },
+  {
+    name: 'JS',
+    percent: 75,
+  },
+  {
+    name: 'Angular',
+    percent: 70,
+  },
+  {
+    name: 'React',
+    percent: 60,
+  },
+  {
+    name: 'Wordpress',
+    percent: 90,
+  },
+  {
+    name: 'JQuery',
+    percent: 75,
+  },
+  {
+    name: 'Photoshop',
+    percent: 90,
+  },
+]

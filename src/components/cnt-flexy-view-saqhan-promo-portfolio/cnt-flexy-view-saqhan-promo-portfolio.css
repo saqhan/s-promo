@@ -87,5 +87,10 @@
 }
 .categories ul li:hover {
   color: #fe6347;
+  /*border-bottom: 1px solid #fe6347;*/
+}
+
+.categories .active {
+  color: #fe6347;
   border-bottom: 1px solid #fe6347;
 }

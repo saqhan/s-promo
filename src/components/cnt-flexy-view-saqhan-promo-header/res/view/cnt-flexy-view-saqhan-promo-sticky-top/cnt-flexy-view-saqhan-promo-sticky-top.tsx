@@ -33,33 +33,40 @@ export class CntFlexyViewSaqhanPromoStickyTop implements ComponentInterface {
     return (
         <div>
           <div class="menu" ref={(el) => (this.menuTag = el)}>
-            <div class="container">
-              <div class="row">
-                <div class="menu-desktop collapse navbar-collapse d-lg-block" id="navbarTop">
-                  <ul class="navbar-nav mr-auto">
-                    {this.getItemSticky(this.categories)}
-                  </ul>
+            <div class="container-fluid bg-dark">
+              <div class="container  " >
+                <div class="row">
+                  <div class="menu-main">
+                    <div class="menu-desktop" >
+                      <ul>
+                        {this.getItemSticky(this.categories)}
+                      </ul>
+                    </div>
+                    <div class=" soc-links ">
+                      <ul class="nav mom-social-icons">
+                        <li class="instagram">
+                          <a target="_blank" href="https://www.instagram.com/saqhan/">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                        <li class="vk">
+                          <a
+                              target="_blank"
+                              rel="fa-icon-vk"
+                              href="https://vk.com/saqhan"
+                          >
+                            <i class="fab fa-vk"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
                 </div>
-                <div class=" soc-links ">
-                  <ul class="nav mom-social-icons">
-                    <li class="instagram">
-                      <a target="_blank" href="https://www.instagram.com/saqhan/">
-                        <i class="fab fa-instagram"></i>
-                      </a>
-                    </li>
-                    <li class="vk">
-                      <a
-                          target="_blank"
-                          rel="fa-icon-vk"
-                          href="https://vk.com/saqhan"
-                      >
-                        <i class="fab fa-vk"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="menu-wrapper col-md-12 d-lg-none">
-                  {!this.isShowBar ?
+              </div>
+            </div>
+            <div class="menu-wrapper col-md-12 d-lg-none">
+              {!this.isShowBar ?
                   <button
                       type="button"
                       class="menu-mobile-button"
@@ -70,8 +77,6 @@ export class CntFlexyViewSaqhanPromoStickyTop implements ComponentInterface {
                   </span>
                   </button> : ''  }
 
-                </div>
-              </div>
             </div>
           </div>
           <div
@@ -105,7 +110,7 @@ export class CntFlexyViewSaqhanPromoStickyTop implements ComponentInterface {
     return array.map((item) => {
       return (
         <li class="nav-item ">
-          <a class="nav-link" href={item.id}>
+          <a class="nav-link" href={`#${item.id}`}>
             {item.name}
           </a>
         </li>

@@ -12,11 +12,11 @@ export class CntFlexyViewSaqhanPromoAboutMe implements ComponentInterface {
   @Prop() payload:AboutMe;
   render() {
     return (
-      <div>
-        <div class="container" id="About">
+      <div class="wow animation_duration animate__fadeInUp">
+        <div class="container " id="about-me ">
           <div class="row">
             <div class="col-sm-12 wrapper-title-about">
-              <div class="titleBlock">{this.payload.title}</div>
+              <div class="titleBlock  ">{this.payload.title}</div>
               <div class="subtitleBlock text-center lsp">
                 {this.payload.subTitle}
               </div>
