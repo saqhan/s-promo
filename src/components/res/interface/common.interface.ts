@@ -5,9 +5,14 @@ export interface HeaderStickyInterface {
     headerTitle: string,
     headerBtnTitle: string,
     logoMain: string,
+    socilaLinks: {
+        name: string,
+        class: string,
+        links: string
+    }[]
 }
 
-export interface AboutMe {
+export interface AboutMeInterface {
     title:string,
     subTitle: string,
     aboutMe: {
@@ -20,11 +25,16 @@ export interface AboutMe {
         text: string,
         phone: string,
         email: string,
-    }
+    },
+    socilaLinks: {
+        name: string,
+        class: string,
+        links: string
+    }[]
 
 }
 
-export interface Portfolio {
+export interface PortfolioInterface {
     portfolioCard: {
         id: number,
         title: string,
@@ -39,7 +49,7 @@ export interface Portfolio {
     }[]
 }
 
-export interface Skils {
+export interface SkillsInterface {
     name: string,
     percent: number
 }

@@ -23,6 +23,23 @@ export const header = {
   headerTitle: "Профессиональная разработка сайтов",
   headerBtnTitle: "отправить завку",
   logoMain: "http://saqhan.ru/img/logo.png",
+  socilaLinks : [
+    {
+      name: 'vkontakte',
+      class: 'fab fa-vk',
+      links: 'https://vk.com/saqhan'
+    },
+    {
+      name: 'instagram',
+      class: 'fab fa-instagram',
+      links: 'https://www.instagram.com/saqhan/'
+    },
+    {
+      name: 'github',
+      class: 'fab fa-github',
+      links: 'https://github.com/saqhan'
+    },
+  ],
 };
 
 /*
@@ -37,7 +54,7 @@ export const aboutMe = {
       "Сайхан, 26 лет. " +
       "Занимаюсь разработкой сайтов с нуля, под ключ. Специалист по CMS WordPress. Выполняю верстку и программирование сайтов. Добавляю весь необходимый функционал на сайт. Делаю адаптивную верстку на Bootstrap, таким образом Ваш сайт будет отлично выглядеть на всех устройствах. Любой начатый проект довожу до конца, постоянно совершенствую свой профессиональный уровень. Вы можете заказать у меня разработку сайта с нуля, или связаться со мной для сотрудничества.",
   },
-  img: "http://saqhan.ru/img/saqhan.jpg",
+  img: "http://saqhan.ru/img/pre-stage/saqhan.jpg",
   contacts: {
     name: "Сайхан Абаев",
     text:
@@ -45,6 +62,23 @@ export const aboutMe = {
     phone: "+ 7 (965) 954 00 34",
     email: "saqhan1@mail.ru",
   },
+  socilaLinks : [
+    {
+      name: 'vkontakte',
+      class: 'fab fa-vk',
+      links: 'https://vk.com/saqhan'
+    },
+    {
+      name: 'instagram',
+      class: 'fab fa-instagram',
+      links: 'https://www.instagram.com/saqhan/'
+    },
+    {
+      name: 'github',
+      class: 'fab fa-github',
+      links: 'https://github.com/saqhan'
+    },
+  ],
 };
 
 export const portfolio = {
@@ -54,7 +88,7 @@ export const portfolio = {
       title: "Module Chat",
       linkGithub: "https://github.com/saqhan/contacts",
       linkApp: "https://saqhan.github.io/contacts/",
-      img: "http://saqhan.ru/img/portfolio/angular.jpg",
+      img: "http://saqhan.ru/img/pre-stage/angular.jpg",
       category: "angular",
     },
     {
@@ -62,7 +96,7 @@ export const portfolio = {
       title: "Mobile Chat",
       linkGithub: "https://github.com/saqhan/contacts",
       linkApp: "https://saqhan.github.io/contacts/",
-      img: "http://saqhan.ru/img/portfolio/angular.jpg",
+      img: "http://saqhan.ru/img/pre-stage/angular.jpg",
       category: "angular",
     },
     {
@@ -70,7 +104,7 @@ export const portfolio = {
       title: "Contacts",
       linkGithub: "https://github.com/saqhan/contacts",
       linkApp: "https://saqhan.github.io/contacts/",
-      img: "http://saqhan.ru/img/portfolio/react.jpg",
+      img: "http://saqhan.ru/img/pre-stage/react.jpg",
       category: "react",
     },
     {
@@ -78,7 +112,7 @@ export const portfolio = {
       title: "Приложение no-twitter.",
       linkGithub: "https://github.com/saqhan/no-twitter/",
       linkApp: "https://saqhan.github.io/no-twitter/",
-      img: "http://saqhan.ru/img/portfolio/angular.jpg",
+      img: "http://saqhan.ru/img/pre-stage/angular.jpg",
       category: "angular",
     },
     {
@@ -86,7 +120,7 @@ export const portfolio = {
       title: "Министерство автомобильных дорог",
       linkGithub: "",
       linkApp: "https://www.minavtodor-chr.ru/",
-      img: "http://saqhan.ru/img/portfolio/minavtodor.jpg",
+      img: "http://saqhan.ru/img/pre-stage/minavtodor.jpg",
       category: "wordpress",
     },
     {
@@ -94,7 +128,7 @@ export const portfolio = {
       title: "Todo приложение нa Angular",
       linkGithub: "https://github.com/saqhan/ng-todo/",
       linkApp: "https://saqhan.github.io/ng-todo/",
-      img: "http://saqhan.ru/img/portfolio/angular.jpg",
+      img: "http://saqhan.ru/img/pre-stage/angular.jpg",
       category: "angular",
     },
     {
@@ -102,7 +136,7 @@ export const portfolio = {
       title: "Chat приложение нa React",
       linkGithub: "https://github.com/saqhan/chat",
       linkApp: "https://saqhan.github.io/chat/",
-      img: "http://saqhan.ru/img/portfolio/react.jpg",
+      img: "http://saqhan.ru/img/pre-stage/react.jpg",
       category: "react",
     },
     {
@@ -110,7 +144,7 @@ export const portfolio = {
       title: "Интернет магазин детских товаров",
       linkGithub: "",
       linkApp: "https://wowchild.ru/",
-      img: "http://saqhan.ru/img/portfolio/kids.jpg",
+      img: "http://saqhan.ru/img/pre-stage/kids.jpg",
       category: "wordpress",
     },
     {
@@ -118,7 +152,7 @@ export const portfolio = {
       title: "Префектура Ленинского района ЧР",
       linkGithub: "",
       linkApp: "https://prefect-len.ru/",
-      img: "http://saqhan.ru/img/portfolio/len-pre.jpg",
+      img: "http://saqhan.ru/img/pre-stage/len-pre.jpg",
       category: "wordpress",
     },
 
@@ -143,37 +177,37 @@ export const portfolio = {
   ],
 };
 
-export const skils = [
+export const skills = [
   {
     name: 'HTML',
-    percent: 90,
+    percent: 75,
   },
   {
     name: 'CSS',
-    percent: 90,
-  },
-  {
-    name: 'JS',
-    percent: 75,
-  },
-  {
-    name: 'Angular',
     percent: 70,
   },
   {
+    name: 'JS',
+    percent: 35,
+  },
+  {
+    name: 'Angular',
+    percent: 37,
+  },
+  {
     name: 'React',
-    percent: 60,
+    percent: 45,
   },
   {
     name: 'Wordpress',
-    percent: 90,
+    percent: 80,
   },
   {
     name: 'JQuery',
-    percent: 75,
+    percent: 65,
   },
   {
     name: 'Photoshop',
-    percent: 90,
+    percent: 50,
   },
 ]
