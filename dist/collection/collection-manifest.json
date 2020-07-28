@@ -1,0 +1,26 @@
+{
+  "entries": [
+    "./components/cnt-flexy-view-saqhan-promo-about-me-wrapper/cnt-flexy-view-saqhan-promo-about-me-wrapper.js",
+    "./components/cnt-flexy-view-saqhan-promo-about-me-wrapper/res/view/cnt-flexy-view-saqhan-promo-about-me/cnt-flexy-view-saqhan-promo-about-me.js",
+    "./components/cnt-flexy-view-saqhan-promo-contact-form-wrapper/cnt-flexy-view-saqhan-promo-contact-form-wrapper.js",
+    "./components/cnt-flexy-view-saqhan-promo-contact-form-wrapper/res/view/cnt-flexy-view-saqhan-promo-contact-form/cnt-flexy-view-saqhan-promo-contact-form.js",
+    "./components/cnt-flexy-view-saqhan-promo-footer-wrapper/cnt-flexy-view-saqhan-promo-footer-wrapper.js",
+    "./components/cnt-flexy-view-saqhan-promo-footer-wrapper/res/view/cnt-flexy-view-saqhan-promo-footer/cnt-flexy-view-saqhan-promo-footer.js",
+    "./components/cnt-flexy-view-saqhan-promo-header-wrapper/cnt-flexy-view-saqhan-promo-header-wrapper.js",
+    "./components/cnt-flexy-view-saqhan-promo-header-wrapper/res/view/cnt-flexy-view-saqhan-promo-header/cnt-flexy-view-saqhan-promo-header.js",
+    "./components/cnt-flexy-view-saqhan-promo-header-wrapper/res/view/cnt-flexy-view-saqhan-promo-header/res/view/cnt-flexy-view-saqhan-promo-sticky-top/cnt-flexy-view-saqhan-promo-sticky-top.js",
+    "./components/cnt-flexy-view-saqhan-promo-portfolio-wrapper/cnt-flexy-view-saqhan-promo-portfolio-wrapper.js",
+    "./components/cnt-flexy-view-saqhan-promo-portfolio-wrapper/res/view/cnt-flexy-view-saqhan-promo-portfolio/cnt-flexy-view-saqhan-promo-portfolio.js",
+    "./components/cnt-flexy-view-saqhan-promo-skils-wrapper/cnt-flexy-view-saqhan-promo-skils-wrapper.js",
+    "./components/cnt-flexy-view-saqhan-promo-skils-wrapper/res/view/cnt-flexy-view-saqhan-promo-skils/cnt-flexy-view-saqhan-promo-skils.js",
+    "./components/cnt-flexy-view-saqhan-promo-skils-wrapper/res/view/cnt-flexy-view-saqhan-promo-skils/res/view/cnt-flexy-view-saqhan-promo-skils-card/cnt-flexy-view-saqhan-promo-skils-card.js",
+    "./components/my-component/my-component.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.12.2",
+    "typescriptVersion": "3.8.3"
+  },
+  "collections": [],
+  "bundles": []
+}

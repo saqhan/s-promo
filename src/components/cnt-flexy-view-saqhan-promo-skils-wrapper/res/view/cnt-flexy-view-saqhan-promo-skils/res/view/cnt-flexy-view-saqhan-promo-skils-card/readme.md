@@ -7,8 +7,8 @@
 
 ## Properties
 
-| Property | Attribute | Description    | Type    | Default     |
-| -------- | --------- | -------------- | ------- | ----------- |
+| Property | Attribute | Description    | Type              | Default     |
+| -------- | --------- | -------------- | ----------------- | ----------- |
 | `skills` | --        | data for cards | `SkillsInterface` | `undefined` |
 
 
@@ -16,12 +16,12 @@
 
 ### Used by
 
- - [cnt-flexy-view-saqhan-promo-skils-1_01](../../..)
+ - [cnt-flexy-view-saqhan-promo-skils](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  cnt-flexy-view-saqhan-promo-skils-1_01 --> cnt-flexy-view-saqhan-promo-skils-card
+  cnt-flexy-view-saqhan-promo-skils --> cnt-flexy-view-saqhan-promo-skils-card
   style cnt-flexy-view-saqhan-promo-skils-card fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

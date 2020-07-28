@@ -7,8 +7,8 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type      | Default     |
-| --------- | --------- | ----------- | --------- | ----------- |
+| Property  | Attribute | Description | Type               | Default     |
+| --------- | --------- | ----------- | ------------------ | ----------- |
 | `payload` | --        |             | `AboutMeInterface` | `undefined` |
 
 
@@ -16,13 +16,13 @@
 
 ### Used by
 
- - [my-component](../../../../my-component)
+ - [cnt-flexy-view-saqhan-promo-about-me-wrapper-1_01](../../..)
 
 ### Graph
 ```mermaid
 graph TD;
-  my-component --> cnt-flexy-view-saqhan-promo-about-me-1_01
-  style cnt-flexy-view-saqhan-promo-about-me-1_01 fill:#f9f,stroke:#333,stroke-width:4px
+  cnt-flexy-view-saqhan-promo-about-me-wrapper-1_01 --> cnt-flexy-view-saqhan-promo-about-me
+  style cnt-flexy-view-saqhan-promo-about-me fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

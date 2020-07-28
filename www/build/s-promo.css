@@ -1,7 +1,1 @@
-.animation_duration {
-    animation-duration: 1.5s;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+.animation_duration{-webkit-animation-duration:1.5s;animation-duration:1.5s}html{scroll-behavior:smooth}

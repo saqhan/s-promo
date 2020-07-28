@@ -103,7 +103,7 @@ export class CntFlexyViewSaqhanPromoStickyTop implements ComponentInterface {
     return array.map((item) => {
       return (
         <li class="nav-item ">
-          <a class="nav-link" href={`#${item.id}`}>
+          <a class="nav-link anchor" href={`#${item.id}`}>
             {item.name}
           </a>
         </li>
