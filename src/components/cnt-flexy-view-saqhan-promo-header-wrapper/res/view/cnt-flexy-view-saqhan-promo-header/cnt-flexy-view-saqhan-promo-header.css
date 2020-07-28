@@ -1,6 +1,5 @@
 .head {
   height: 100vh;
-  background-image: url("http://saqhan.ru/img/pre-stage/main_bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -22,6 +21,9 @@
 }
 
 .logo {
+  width: 123px;
+  height: 123px;
+  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -169,7 +171,7 @@
 }
 
 .overlay .popup-form {
-  background: url(http://saqhan.ru/img/pre-stage/modal_bg.jpg) center no-repeat;
+  /*background: url(http://saqhan.ru/img/pre-stage/modal_bg.jpg) center no-repeat;*/
   background-size: cover;
   padding: 35px 88px 50px 88px;
   color: #fff;

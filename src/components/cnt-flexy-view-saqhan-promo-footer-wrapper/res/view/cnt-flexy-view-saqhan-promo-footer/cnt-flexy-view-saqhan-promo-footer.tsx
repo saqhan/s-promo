@@ -15,7 +15,9 @@ export class CntFlexyViewSaqhanPromoFooter implements ComponentInterface {
   render() {
     return (
       <div>
-        <footer class="fdb-block footer-small pt-5">
+        <footer class="fdb-block footer-small pt-5"
+          style={{backgroundImage: `url(${this.categories.footerBackgroundImage})`}}
+        >
           <div class="container">
             <div class="row text-center align-items-center">
               <div class="col" id="navbarBottom">

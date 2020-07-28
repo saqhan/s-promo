@@ -24,7 +24,8 @@ const header = {
     ],
     headerTitle: "Профессиональная разработка сайтов",
     headerBtnTitle: "отправить завку",
-    logoMain: "http://saqhan.ru/img/logo.png",
+    logoMain: "http://saqhan.ru/img/pre-stage/logo.png",
+    backgroundImage: 'http://saqhan.ru/img/pre-stage/main_bg.jpg',
     socilaLinks: [
         {
             name: 'vkontakte',
@@ -42,6 +43,7 @@ const header = {
             links: 'https://github.com/saqhan'
         },
     ],
+    footerBackgroundImage: 'http://saqhan.ru/img/pre-stage/footer-bg.jpg',
 };
 /*
  * Данные для блока Обо мне
@@ -207,6 +209,13 @@ const skills = [
         percent: 50,
     },
 ];
+const contactForm = {
+    title: 'Контакты',
+    subTitle: 'Позвоните или напишите на почту',
+    number: '+ 7 (965) 954 00 34',
+    email: 'saqhan1@mail.ru',
+    backgroundImage: 'http://saqhan.ru/img/pre-stage/9.svg'
+};
 
 const myComponentCss = ".sc-my-component-h{display:block}";
 
@@ -215,7 +224,7 @@ const MyComponent = class {
         registerInstance(this, hostRef);
     }
     render() {
-        return (h("div", null, h("cnt-flexy-view-saqhan-promo-header-wrapper-1_01", { categories: header }), h("cnt-flexy-view-saqhan-promo-about-me-wrapper-1_01", { payload: aboutMe }), h("cnt-flexy-view-saqhan-promo-skils-wrapper-1_01", { payload: skills }), h("cnt-flexy-view-saqhan-promo-portfolio-wrapper-1_01", { payload: portfolio }), h("cnt-flexy-view-saqhan-promo-contact-form-wrapper-1_01", { payload: aboutMe }), h("cnt-flexy-view-saqhan-promo-footer-wrapper", { categories: header })));
+        return (h("div", null, h("cnt-flexy-view-saqhan-promo-header-wrapper-1_01", { categories: header }), h("cnt-flexy-view-saqhan-promo-about-me-wrapper-1_01", { payload: aboutMe }), h("cnt-flexy-view-saqhan-promo-skils-wrapper-1_01", { payload: skills }), h("cnt-flexy-view-saqhan-promo-portfolio-wrapper-1_01", { payload: portfolio }), h("cnt-flexy-view-saqhan-promo-contact-form-wrapper-1_01", { payload: contactForm }), h("cnt-flexy-view-saqhan-promo-footer-wrapper", { categories: header })));
     }
 };
 MyComponent.style = myComponentCss;

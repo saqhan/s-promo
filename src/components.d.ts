@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { AboutMeInterface, HeaderStickyInterface, PortfolioInterface, SkillsInterface, } from "./components/res/interface/common.interface";
+import { AboutMeInterface, contactFormInterface, HeaderStickyInterface, PortfolioInterface, SkillsInterface, } from "./components/res/interface/common.interface";
 export namespace Components {
     interface CntFlexyViewSaqhanPromoAboutMe {
         "payload": AboutMeInterface;
@@ -14,10 +14,10 @@ export namespace Components {
         "payload": AboutMeInterface;
     }
     interface CntFlexyViewSaqhanPromoContactForm {
-        "payload": AboutMeInterface;
+        "payload": contactFormInterface;
     }
     interface CntFlexyViewSaqhanPromoContactFormWrapper1_01 {
-        "payload": AboutMeInterface;
+        "payload": contactFormInterface;
     }
     interface CntFlexyViewSaqhanPromoFooter {
         "categories": HeaderStickyInterface;
@@ -185,10 +185,10 @@ declare namespace LocalJSX {
         "payload"?: AboutMeInterface;
     }
     interface CntFlexyViewSaqhanPromoContactForm {
-        "payload"?: AboutMeInterface;
+        "payload"?: contactFormInterface;
     }
     interface CntFlexyViewSaqhanPromoContactFormWrapper1_01 {
-        "payload"?: AboutMeInterface;
+        "payload"?: contactFormInterface;
     }
     interface CntFlexyViewSaqhanPromoFooter {
         "categories"?: HeaderStickyInterface;

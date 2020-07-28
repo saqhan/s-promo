@@ -1,5 +1,5 @@
 import { Component, ComponentInterface, h, Prop } from "@stencil/core";
-import { AboutMeInterface } from "../../../../res/interface/common.interface";
+import { contactFormInterface } from "../../../../res/interface/common.interface";
 
 @Component({
   tag: "cnt-flexy-view-saqhan-promo-contact-form",
@@ -8,7 +8,7 @@ import { AboutMeInterface } from "../../../../res/interface/common.interface";
   scoped: true,
 })
 export class CntFlexyViewSaqhanPromoContactForm implements ComponentInterface {
-  @Prop() payload: AboutMeInterface;
+  @Prop() payload: contactFormInterface;
 
   /**
    *
@@ -27,13 +27,17 @@ export class CntFlexyViewSaqhanPromoContactForm implements ComponentInterface {
 
   render() {
     return (
-      <section class="fdb-block contact wow animation_duration animate__fadeIn" id="contacts">
+      <section
+        class="fdb-block contact wow animation_duration animate__fadeIn"
+        id="contacts"
+        style={{ backgroundImage: `url(${this.payload.backgroundImage})` }}
+      >
         <div class="bg-gray">
           <div class="container">
             <div class="row-100"></div>
             <div class="row text-left">
               <div class="col-8">
-                <h1 class="title-contacts">Контакты</h1>
+                <h1 class="title-contacts">{this.payload.title}</h1>
               </div>
             </div>
             <div class="row-100"></div>
@@ -44,23 +48,21 @@ export class CntFlexyViewSaqhanPromoContactForm implements ComponentInterface {
           <div class="row">
             <div class="col-12 col-md-6 col-lg-5">
               <div class="text-large footer-subtitle ">
-                Позвоните или напишите на почту
+                {this.payload.subTitle}
               </div>
 
               <p class="h3 mt-4 mt-lg-5">
                 <strong>Телефон:</strong>
               </p>
               <p>
-                <a href="tel:+79659540034">{this.payload.contacts.phone}</a>
+                <a href="tel:+79659540034">{this.payload.number}</a>
               </p>
 
               <p class="h3 mt-4 mt-lg-5">
                 <strong>Почта:</strong>
               </p>
               <p>
-                <a href="mailto:saqhan1@mail.ru">
-                  {this.payload.contacts.email}
-                </a>
+                <a href="mailto:saqhan1@mail.ru">{this.payload.email}</a>
               </p>
             </div>
 

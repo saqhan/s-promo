@@ -42,3 +42,9 @@
 .aboutContactsubtitle a {
   margin-right: 5px;
 }
+
+.myPhoto {
+  max-width: 300px;
+  height: 310px;
+  margin: auto;
+}

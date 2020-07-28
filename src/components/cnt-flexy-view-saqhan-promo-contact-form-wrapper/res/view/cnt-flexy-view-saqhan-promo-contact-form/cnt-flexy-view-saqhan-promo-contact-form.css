@@ -1,10 +1,8 @@
-
 .contact {
-  padding:50px 0px;
+  padding: 50px 0;
 }
 
 .contact {
-  background-image: url(http://saqhan.ru/img/9.svg);
   background-size: cover;
 }
 
@@ -34,10 +32,6 @@
   color: #fff;
 }
 
-
-
-element.style {
-}
 #hide-block {
   display: none;
   background-color: #4e8000;
@@ -47,5 +41,3 @@ element.style {
   color: #fff;
   transition: 0.6s ease;
 }
-
-

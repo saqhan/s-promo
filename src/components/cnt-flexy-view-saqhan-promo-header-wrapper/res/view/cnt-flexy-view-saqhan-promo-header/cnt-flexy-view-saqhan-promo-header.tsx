@@ -30,12 +30,13 @@ export class CntFlexyViewSaqhanPromoHeader implements ComponentInterface {
         ></cnt-flexy-view-saqhan-promo-sticky-top>
         <div
           class="container-fluid head"
-          // style={{backgroundImage: 'url' }}
+          style={{backgroundImage: `url(${this.categories.backgroundImage})` }}
         >
           <div class="row flex-center">
             <div class="topContent wow animation_duration animate__fadeIn ">
-              <div class="logo">
-                <img src={this.categories.logoMain} alt="Сайхан Абаев"></img>
+              <div class="logo"
+                style={{backgroundImage: `url(${this.categories.logoMain})`}}
+              >
               </div>
               <div class="titleBlock ">{this.categories.headerTitle}</div>
 
@@ -60,7 +61,9 @@ export class CntFlexyViewSaqhanPromoHeader implements ComponentInterface {
               &times;
             </div>
             <div class="popup-title">Отправить заявку!</div>
-            <div class="popup-form">
+            <div class="popup-form"
+              style={{backgroundImage: `url(http://saqhan.ru/img/pre-stage/modal_bg.jpg)`}}
+            >
               <form id="overlayForm" action="#" class="main-form">
                 <label class="popup-form__label" htmlfor="phone">
                   Оставтье свой номер и обязательно свяжусь с Вами!

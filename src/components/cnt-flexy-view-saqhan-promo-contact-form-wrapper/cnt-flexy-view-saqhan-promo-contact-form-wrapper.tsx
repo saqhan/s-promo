@@ -1,5 +1,5 @@
 import {Component, ComponentInterface, h, Prop} from '@stencil/core';
-import {AboutMeInterface} from "../res/interface/common.interface";
+import {contactFormInterface} from "../res/interface/common.interface";
 
 @Component({
   tag: 'cnt-flexy-view-saqhan-promo-contact-form-wrapper-1_01',
@@ -9,7 +9,7 @@ import {AboutMeInterface} from "../res/interface/common.interface";
 })
 export class CntFlexyViewSaqhanPromoContactFormWrapper implements ComponentInterface {
 
-  @Prop() payload: AboutMeInterface;
+  @Prop() payload: contactFormInterface;
 
   render() {
     return (

@@ -5,6 +5,8 @@ export interface HeaderStickyInterface {
     headerTitle: string,
     headerBtnTitle: string,
     logoMain: string,
+    backgroundImage: string,
+    footerBackgroundImage: string,
     socilaLinks: {
         name: string,
         class: string,
@@ -53,3 +55,12 @@ export interface SkillsInterface {
     name: string,
     percent: number
 }
+
+export interface contactFormInterface {
+    title: string,
+    subTitle: string,
+    number: string,
+    email: string,
+    backgroundImage: string,
+}
+

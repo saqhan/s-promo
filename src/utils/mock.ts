@@ -22,7 +22,8 @@ export const header = {
   ],
   headerTitle: "Профессиональная разработка сайтов",
   headerBtnTitle: "отправить завку",
-  logoMain: "http://saqhan.ru/img/logo.png",
+  logoMain: "http://saqhan.ru/img/pre-stage/logo.png",
+  backgroundImage: 'http://saqhan.ru/img/pre-stage/main_bg.jpg',
   socilaLinks : [
     {
       name: 'vkontakte',
@@ -40,6 +41,7 @@ export const header = {
       links: 'https://github.com/saqhan'
     },
   ],
+  footerBackgroundImage: 'http://saqhan.ru/img/pre-stage/footer-bg.jpg',
 };
 
 /*
@@ -211,3 +213,12 @@ export const skills = [
     percent: 50,
   },
 ]
+
+export const contactForm = {
+  title: 'Контакты',
+  subTitle: 'Позвоните или напишите на почту',
+  number: '+ 7 (965) 954 00 34',
+  email: 'saqhan1@mail.ru',
+  backgroundImage: 'http://saqhan.ru/img/pre-stage/9.svg'
+}
+

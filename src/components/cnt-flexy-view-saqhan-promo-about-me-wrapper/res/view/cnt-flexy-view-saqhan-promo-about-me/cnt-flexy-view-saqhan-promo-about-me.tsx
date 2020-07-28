@@ -32,8 +32,10 @@ export class CntFlexyViewSaqhanPromoAboutMe implements ComponentInterface {
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="myPhoto text-center">
-                <img src={this.payload.img} alt="Saqhan" />
+              <div class="myPhoto text-center"
+                style={{backgroundImage: `url(${this.payload.img})`}}
+              >
+
               </div>
             </div>
             <div class="col-12 col-md-12 col-lg-4">
